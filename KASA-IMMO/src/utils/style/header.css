@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  background-color: #f8f8f8;
 }
 
 .logo {
-  width: 210px;
-  height: 68px;
-  background-color: #ff6060;
+  width: 50px;
+  height: 25px;
+  color: #ff6060;
+  flex-shrink: 0;
+  margin-right: 16px; /* Ajouter un espacement à droite du logo */
 }
 
 .navigation ul {
@@ -17,6 +17,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+  margin-left: 16px; /* Ajouter un espacement à gauche des liens */
 }
 
 .navigation li {
