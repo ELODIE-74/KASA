@@ -6,6 +6,7 @@ import "./index.css";
 import Header from "./components/header/header";
 import "./utils/style/header.css";
 import Footer from "./components/footer/footer.jsx";
+//import Sectioncard from "./components/card/card.jsx";
 
 function Home() {
   // Votre composant Home
