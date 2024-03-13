@@ -5,11 +5,16 @@
 }
 
 .logo {
-  width: 50px;
+  /*width: 50px;
   height: 25px;
   color: #ff6060;
   flex-shrink: 0;
   margin-right: 16px; /* Ajouter un espacement à droite du logo */
+  color: #ff6060;
+  width: 95px;
+  height: 25px;
+  top: 15px;
+  margin-left: 10px;
 }
 
 .navigation ul {

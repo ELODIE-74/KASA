@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Header from "./components/header/header";
 import "./utils/style/header.css";
+import Footer from "./components/footer/footer.jsx";
 
 function Home() {
   // Votre composant Home
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/fichelogement" element={<Fichelogement />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer></Footer>
     </Router>
   </React.StrictMode>
 );
