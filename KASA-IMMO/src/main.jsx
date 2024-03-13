@@ -7,22 +7,10 @@ import Header from "./components/header/header";
 import "./utils/style/header.css";
 import Footer from "./components/footer/footer.jsx";
 //import Sectioncard from "./components/card/card.jsx";
-
-function Home() {
-  // Votre composant Home
-}
-
-function Apropos() {
-  // Votre composant Apropos
-}
-
-function Fichelogement() {
-  // Votre composant Fichelogement
-}
-
-function ErrorPage() {
-  // Votre composant ErrorPage
-}
+import Home from "./pages/home/home.jsx";
+import Apropos from "./pages/apropos/apropos.jsx";
+import Fichelogement from "./pages/fichelogement/fichelogement.jsx";
+import Error404 from "./pages/error404/error404.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -33,9 +21,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/fichelogement" element={<Fichelogement />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

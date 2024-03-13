@@ -1,4 +1,4 @@
 function Apropos() {
-  // Votre composant Apropos
+  return <h1>Page Apropos</h1>;
 }
 export default Apropos;
