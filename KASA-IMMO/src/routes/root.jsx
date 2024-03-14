@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./index.css";
+/*import "./index.css";*/
 import Header from "./components/header/header.jsx"; // Ajout de l'extension .jsx
 import "./components/header/header.css";
 import Footer from "./components/footer/footer.jsx";
