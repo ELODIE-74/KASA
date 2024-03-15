@@ -19,7 +19,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  margin-left: 16px; /* Ajouter un espacement à gauche des liens */
+  margin-left: 16px;
 }
 
 .navigation li {
@@ -30,6 +30,10 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   font-family: Montserrat;
+}
+.navigation a:hover {
+  text-decoration: underline;
+  margin-top: 5px;
 }
