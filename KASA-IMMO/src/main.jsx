@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-import Header from "./components/header/header.jsx"; // Ajout de l'extension .jsx
+import Header from "./components/header/header.jsx";
 import "./components/header/header.css";
 import Footer from "./components/footer/footer.jsx";
 import Home from "./pages/home/home.jsx";
@@ -18,10 +18,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/fichelogement" element={<Fichelogement />} />
-        <Route path="*" element={<Error404 />} />{" "}
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
     </Router>
   </React.StrictMode>
 );
-export default App;

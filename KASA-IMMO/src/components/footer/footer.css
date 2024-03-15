@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
-  width: 1440px;
+  width: 100%;
   height: 209px;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   width: 122px;
   height: 39px;
   top: 15px;
-  padding-left: 665px;
+  padding-left: 850px;
 }
 .footer p {
   text-align: center;

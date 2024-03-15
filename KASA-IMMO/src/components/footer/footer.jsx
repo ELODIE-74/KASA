@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../footer/footer.css";
 import logoFooter from "../../assets/logofooter.png";
 
@@ -9,7 +8,7 @@ function Footer() {
       <div className="logofooter">
         <img src={logoFooter} alt="Logo Kasa footer" />
       </div>
-      <p>2020 kasa. All rights reserved</p>
+      <p>&#x24B8; 2020 kasa. All rights reserved</p>
     </footer>
   );
 }

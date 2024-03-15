@@ -1,0 +1,22 @@
+.imagebanniere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0;
+}
+
+.imagehome {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 35px;
+  filter: brightness(0.4);
+  z-index: -2;
+}
+
+.texteimagehome {
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
