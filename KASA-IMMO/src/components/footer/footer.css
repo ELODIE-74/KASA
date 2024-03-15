@@ -5,14 +5,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin-top: 650px;
 }
 .logofooter {
+  display: flex;
+  justify-content: center;
   color: white;
   width: 122px;
   height: 39px;
-  top: 15px;
-  padding-left: 850px;
+  top: 25px;
+  margin-bottom: 15px;
 }
 .footer p {
   text-align: center;
