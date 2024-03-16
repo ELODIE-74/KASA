@@ -1,4 +1,16 @@
+import imageLogement from "../../assets/imagefichelogement.png";
+
 function Fichelogement() {
-  return <h1>Page logement</h1>;
+  return (
+    <section>
+      <div className="imagebannierelogement">
+        <img
+          className="imagefichelogement"
+          src={imageLogement}
+          alt="image bannière logement"
+        />
+      </div>
+    </section>
+  );
 }
 export default Fichelogement;
