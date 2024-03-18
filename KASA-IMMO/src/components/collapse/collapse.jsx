@@ -7,8 +7,11 @@ function Collapse() {
     <div className="container">
       {data.map((item) => (
         <div key={item.id}>
-          <h3>{item.title}</h3>
-          <button onClick={() => handleCollapseToggle(item.id)}>
+          <h3 className="h3collapse">{item.title}</h3>
+          <button
+            className="buttonclick"
+            onClick={() => handleCollapseToggle(item.id)}
+          >
             {item.state ? "▼" : "►"}
           </button>
           {item.state && <p>{item.text}</p>}
