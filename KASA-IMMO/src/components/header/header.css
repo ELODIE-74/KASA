@@ -2,22 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 10px;
   margin: 10px;
-  @media only screen and (min-width: 1024px) {
-    font-size: 14px;
-    padding: 0px;
-  }
 }
 
 .logo {
   color: #ff6060;
   width: 95px;
   height: 25px;
-  top: 15px;
-  @media only screen and (min-width: 1024px) {
-    width: 25px;
-  }
 }
 
 .navigation ul {
@@ -27,6 +18,7 @@
   display: flex;
   align-items: center;
   margin-left: 16px;
+  flex-wrap: nowrap; /* Empêche les liens de passer à la ligne */
 }
 
 .navigation li {
@@ -40,7 +32,17 @@
   font-size: 20px;
   font-family: Montserrat;
 }
+
 .navigation a:hover {
   text-decoration: underline;
   margin-top: 5px;
+}
+@media only screen and (max-width: 482px) {
+  .logo {
+    width: auto; /* Permet au logo de s'adapter à la taille du contenu */
+  }
+
+  .navigation ul {
+    flex-wrap: wrap; /* Permet aux liens de passer à la ligne si nécessaire */
+  }
 }

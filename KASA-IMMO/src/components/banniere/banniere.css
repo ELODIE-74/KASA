@@ -1,0 +1,42 @@
+.imagebanniere {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 170px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*@media (max-width: 1005px) {
+    height: 140px;
+    margin: 0 0;
+    margin-top: 55px;
+  }*/
+}
+
+.imagehome {
+  width: 95%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 35px;
+  filter: brightness(0.4);
+  z-index: -2;
+  /*@media (max-width: 1005px) {
+    height: 140px;
+  }*/
+}
+
+.texteimagehome {
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 482px) {
+  .imagehome {
+    width: 100%; /* Permet au logo de s'adapter à la taille du contenu */
+  }
+
+  .texteimagehome {
+    flex-wrap: wrap; /* Permet aux liens de passer à la ligne si nécessaire */
+  }
+}

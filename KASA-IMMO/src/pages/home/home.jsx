@@ -2,7 +2,7 @@
 import imageHome from "../../assets/imagehome.png";
 import Card from "../../components/card/card";
 //css
-import "./home.css";
+import "../../components/banniere/banniere.css";
 
 //fonction qui gère l'affichage de certains éments dans la page d'accueil
 function Home() {

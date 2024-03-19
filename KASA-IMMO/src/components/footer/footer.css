@@ -7,9 +7,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 620px;
-  @media (max-width: 1005px) {
-    bottom: 300px;
-  }
 }
 .logofooter {
   display: flex;
@@ -25,7 +22,22 @@
   text-align: center;
   color: white;
   margin-bottom: 25px;
-  @media (max-width: 1005px) {
+}
+@media (max-width: 481px) {
+  .footer {
+    margin-top: 0; /* Supprime le margin-top */
+    position: relative;
+    bottom: -615px;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .logofooter {
+    margin-bottom: 10px; /* Réduisez le margin-bottom pour un meilleur espacement */
+  }
+
+  .footer p {
     font-size: 16px;
+    flex-wrap: wrap;
   }
 }
