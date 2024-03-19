@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   margin-right: 50px;
+  margin-bottom: -550px;
+  margin-top: -50px;
 }
 
 .buttonclick {
@@ -10,16 +12,23 @@
   justify-content: flex-end;
   position: absolute;
   right: 155px;
-  margin-top: -55px;
+  margin-top: -65px;
 }
 .h3collapse {
   display: flex;
   justify-content: flex-start;
   margin-left: 150px;
-  padding: 5px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 25px;
   width: 85%;
   height: 50px;
   color: white;
   background-color: #ff6060;
+}
+p {
+  width: 85%;
+  overflow: hidden;
+  padding-left: 160px;
+  font-size: 25px;
+  padding-right: 30px;
 }

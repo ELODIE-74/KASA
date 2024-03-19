@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+//import css
 import "./collapse.css";
+//import du fichier créer de la base de données du collapse
 import collapseData from "./collapse.json";
+
+//méthode map pour la gestion des données(titre/texte défilement)par le statut ouvert/fermé
 function Collapse() {
   const [data, setData] = useState(collapseData);
   return (
@@ -19,7 +23,7 @@ function Collapse() {
       ))}
     </div>
   );
-
+  //action de l'utilisateur au clic sur le bouton de défilement par l'id du bouton
   function handleCollapseToggle(id) {
     setData((prevData) => {
       return prevData.map((item) => {
