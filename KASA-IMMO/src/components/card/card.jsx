@@ -6,23 +6,15 @@ import "./card.css";
 import DataLogement from "../../data/logements.json";
 
 // Composant Card qui génére des cards
-function Card() {
+function Card({ id, cover, title }) {
   return (
-    <section className="ConteneurLogement">
-      {DataLogement.map((logements) => (
-        <Link to={`/logements/${logements.id}`} key={logements.id}>
-          <figure className="ConteneurCard">
-            <img
-              className="ImgLogement"
-              src={logements.cover}
-              alt={logements.title}
-            />
-            <div className="ConteneurtitleLogement"></div>
-            <figcaption className="TitleLogement">{logements.title}</figcaption>
-          </figure>
-        </Link>
-      ))}
-    </section>
+    <Link to={`/logements/${id}`} key={id}>
+      <figure className="ConteneurCard">
+        <img className="ImgLogement" src={cover} alt={title} />
+        <div className="ConteneurtitleLogement"></div>
+        <figcaption className="TitleLogement">{title}</figcaption>
+      </figure>
+    </Link>
   );
 }
 export default Card;
