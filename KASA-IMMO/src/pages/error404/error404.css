@@ -30,4 +30,18 @@
 }
 .LinkError404:hover {
   filter: brightness(0.95);
+  color: #ff6060;
+}
+@media (max-width: 482px) {
+  .TitleError404 {
+    font-size: 80px;
+  }
+  .TexteError404 {
+    font-size: 18px;
+    margin-right: 80px;
+  }
+  .LinkError404 {
+    font-size: 14px;
+    margin-left: 35px;
+  }
 }
