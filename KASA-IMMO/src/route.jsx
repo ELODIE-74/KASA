@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+/*import ReactDOM from "react-dom";*/
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Header from "./components/header/header.jsx";
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/fichelogement" element={<Fichelogement />} />
-        <Route path="/error404" element={<Error404 />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
     </Router>

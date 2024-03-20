@@ -1,0 +1,29 @@
+.ConteneurError404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  color: #ff6060;
+}
+
+.TitleError404 {
+  font-size: 280px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.TexteError404 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.LinkError404 {
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: 100px;
+}
+.LinkError404:hover {
+  filter: brightness(0.95);
+}
