@@ -1,6 +1,5 @@
 .footer {
   background-color: black;
-  width: 100%;
   height: 230px;
   display: flex;
   justify-content: center;
@@ -9,8 +8,6 @@
   margin-top: 620px;
 }
 .logofooter {
-  display: flex;
-  justify-content: center;
   color: white;
   width: 122px;
   height: 39px;
@@ -24,20 +21,12 @@
   margin-bottom: 25px;
 }
 @media (max-width: 481px) {
-  .footer {
-    margin-top: 0; /* Supprime le margin-top */
-    position: relative;
-    bottom: -615px;
-    width: 100%;
-    padding-left: 15px;
-  }
-
   .logofooter {
-    margin-bottom: 10px; /* Réduisez le margin-bottom pour un meilleur espacement */
+    padding-right: 45px;
   }
-
   .footer p {
     font-size: 16px;
     flex-wrap: wrap;
+    padding-left: 40px;
   }
 }
