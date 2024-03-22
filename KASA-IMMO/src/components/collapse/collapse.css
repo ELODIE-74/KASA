@@ -11,8 +11,11 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  right: 200px;
-  margin-top: -65px;
+  right: 150px;
+  margin-top: -70px;
+  background-color: transparent;
+  border: none;
+  width: 60px;
 }
 .h3collapse {
   display: flex;
