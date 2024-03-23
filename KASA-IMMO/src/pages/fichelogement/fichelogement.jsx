@@ -6,7 +6,6 @@ import "./fichelogement.css";
 import DataLogement from "../../data/logements.json";
 import imageLogement from "../../assets/imagefichelogement.png";
 //import composants
-import Collapse from "../../components/collapse/collapse"; // Assurez-vous d'ajuster le chemin si nécessaire
 
 //fonction pour gérer les évènements et éléments de la page logement
 function Fichelogement() {
@@ -29,13 +28,15 @@ function Fichelogement() {
   }
   return (
     <section>
+      {" "}
       <div className="imagebannierelogement">
+        {" "}
         <img
           className="imagefichelogement"
           src={imageLogement}
           alt="image bannière logement"
-        />
-      </div>
+        />{" "}
+      </div>{" "}
     </section>
   );
 }

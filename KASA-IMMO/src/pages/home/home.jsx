@@ -15,12 +15,13 @@ function Home() {
       </div>
       <div className="ConteneurLogement">
         {DataLogement.map((logement) => (
-          <Card
-            id={logement.id}
-            cover={logement.cover}
-            title={logement.title}
-            key={logement.id}
-          />
+          <div key={logement.id}>
+            <Card
+              id={logement.id}
+              cover={logement.cover}
+              title={logement.title}
+            />
+          </div>
         ))}
       </div>
     </section>
