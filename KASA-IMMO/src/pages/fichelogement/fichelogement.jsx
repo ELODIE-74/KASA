@@ -1,14 +1,16 @@
 // IMPORTS
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
 import "./fichelogement.css";
 // ASSETS
 import DataLogement from "../../data/logements.json";
-import imageLogement from "../../assets/imagefichelogement.png";
-//import composants
 
+//import composants
+import Slide from "../../components/slide/slide";
 //fonction pour gérer les évènements et éléments de la page logement
 function Fichelogement() {
+  // Récupérer l'ID du logement à partir de l'URL
   const [logement, setLogement] = useState(null);
   const { id } = useParams(); // Récupère l'id du logement dans l'url
 
@@ -27,17 +29,9 @@ function Fichelogement() {
     return <Error />;
   }
   return (
-    <section>
-      {" "}
-      <div className="imagebannierelogement">
-        {" "}
-        <img
-          className="imagefichelogement"
-          src={imageLogement}
-          alt="image bannière logement"
-        />{" "}
-      </div>{" "}
-    </section>
+    <div className="ficheslogement">
+      {logement && <Slide pictures={logement.pictures} />}
+    </div>
   );
 }
 export default Fichelogement;

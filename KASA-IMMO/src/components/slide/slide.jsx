@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./slideshow.css";
+import "./slide.css";
 import leftArrow from "../../assets/arrowleft.png";
 import rightArrow from "../../assets/arrowright.png";
 
-function Slideshow({ pictures }) {
+function Slide({ pictures }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrevSlide = () => {
@@ -35,7 +35,7 @@ function Slideshow({ pictures }) {
         alt={`Slide ${currentSlide + 1}`}
       />
 
-      {images.length > 1 && (
+      {pictures.length > 1 && (
         <img
           className="arrow arrowright"
           src={rightArrow}
@@ -44,9 +44,9 @@ function Slideshow({ pictures }) {
         />
       )}
 
-      {images.length > 1 && (
+      {pictures.length > 1 && (
         <div className="pagination">
-          {pictures.map((_, index) => (
+          {pictures.map((index) => (
             <div
               key={index}
               className={`dot ${index === currentSlide ? "active" : ""}`}
@@ -59,4 +59,4 @@ function Slideshow({ pictures }) {
   );
 }
 
-export default Slideshow;
+export default Slide;
