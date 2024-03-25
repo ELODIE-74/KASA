@@ -1,1 +1,28 @@
-
+.ficheslogement h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff6060;
+  margin-top: 20px;
+}
+.ficheslogement h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff6060;
+  margin-top: 20px;
+  position: absolute;
+  top: auto;
+  right: 150px;
+}
+.imgcercle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: auto;
+  right: 80px;
+}
+.ficheslogement p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: -160px;
+}
