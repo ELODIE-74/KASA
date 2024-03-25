@@ -8,7 +8,7 @@
   font-weight: bold;
   font-size: 18px;
   color: #ff6060;
-  margin-top: 20px;
+  margin-top: -15px;
   position: absolute;
   top: auto;
   right: 150px;
@@ -18,7 +18,7 @@
   height: 50px;
   border-radius: 50%;
   position: absolute;
-  top: auto;
+  top: 520px;
   right: 80px;
 }
 .ficheslogement p {
@@ -26,3 +26,26 @@
   font-weight: bold;
   margin-left: -160px;
 }
+.ficheslogement ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ficheslogement li {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+/*.ficheslogement ul li {
+  display: flex;
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}*/
