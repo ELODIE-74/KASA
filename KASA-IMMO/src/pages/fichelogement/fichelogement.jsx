@@ -1,4 +1,3 @@
-// IMPORTS
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -24,10 +23,6 @@ function Fichelogement() {
     }
   }, [id]);
 
-  if (!logement) {
-    // Si l'id n'existe pas, affiche la page d'erreur
-    return <Error />;
-  }
   return (
     <div className="ficheslogement">
       {logement && <Slide pictures={logement.pictures} />}

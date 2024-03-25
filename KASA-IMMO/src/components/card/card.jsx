@@ -8,7 +8,7 @@ import DataLogement from "../../data/logements.json";
 // Composant Card qui génére des cards
 function Card({ id, cover, title }) {
   return (
-    <Link to={`/logements/${id}`} key={id}>
+    <Link to={`/fichelogement/${id}`} key={id}>
       <figure className="ConteneurCard">
         <img className="ImgLogement" src={cover} alt={title} />
         <div className="ConteneurtitleLogement"></div>
