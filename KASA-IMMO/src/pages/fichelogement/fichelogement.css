@@ -1,6 +1,6 @@
 .ficheslogement h2 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   color: #ff6060;
   margin-top: 20px;
 }
@@ -31,6 +31,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 15px;
 }
 
 .ficheslogement li {
@@ -39,7 +40,16 @@
   border-radius: 20px;
   padding: 5px 10px;
   margin-right: 10px;
+  margin-top: 15px;
 }
+.rating {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 80px;
+  top: 600px;
+}
+
 /*.ficheslogement ul li {
   display: flex;
   margin-top: 20px;

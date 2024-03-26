@@ -7,6 +7,8 @@ import DataLogement from "../../data/logements.json";
 
 //import composants
 import Slide from "../../components/slide/slide";
+//import Collapse from "../../components/collapse/collapse";
+import Rating from "../../components/rating/rating";
 
 //fonction pour gérer les évènements et éléments de la page logement
 function Fichelogement() {
@@ -40,6 +42,28 @@ function Fichelogement() {
               <li key={index}>{tag}</li>
             ))}
           </ul>
+          {/* Description (mise en commentaire)
+          <Collapse title="Description">
+            <p>{logement.description}</p>
+          </Collapse>
+          */}
+
+          {/*logement.equipements && (
+            <Collapse title="Équipements">
+              <ul>
+                {logement.equipements.map((equipement, index) => (
+                  <li key={index}>{equipement}</li>
+                ))}
+              </ul>
+            </Collapse>
+                )*/}
+
+          {/* Note du logement */}
+          {logement.rating && (
+            <div>
+              <Rating rating={logement.rating} />
+            </div>
+          )}
         </>
       )}
     </div>
