@@ -6,6 +6,7 @@ import collapseData from "./collapse.json";
 import haut from "../../assets/haut.png";
 import bas from "../../assets/bas.png";
 //méthode map pour la gestion des données(titre/texte défilement)par le statut ouvert/fermé
+
 function Collapse() {
   const [data, setData] = useState(collapseData);
   return (

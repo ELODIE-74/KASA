@@ -51,6 +51,7 @@ function Fichelogement() {
               <li key={index}>{tag}</li>
             ))}
           </ul>
+
           {/* Description (mise en commentaire)
           <Collapse title="Description">
             <p>{logement.description}</p>
@@ -66,7 +67,6 @@ function Fichelogement() {
               </ul>
             </Collapse>
                 )*/}
-
           {/* Note du logement */}
           {logement.rating && (
             <div>
