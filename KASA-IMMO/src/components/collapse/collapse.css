@@ -4,14 +4,14 @@
   justify-content: center;
   margin-right: 50px;
   margin-bottom: -550px;
-  margin-top: -50px;
+  margin-top: -45px;
 }
 
 .buttonclick {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  right: 150px;
+  right: 190px;
   margin-top: -70px;
   background-color: transparent;
   border: none;
@@ -41,12 +41,15 @@ p {
     display: block;
     justify-content: flex-start;
     margin-top: 25px;
-    margin-left: -150px;
+    margin-left: -160px;
     width: 120%;
   }
   .buttonclick {
     position: absolute;
     right: 25px;
     margin-top: -72px;
+  }
+  p {
+    font-size: 18px;
   }
 }

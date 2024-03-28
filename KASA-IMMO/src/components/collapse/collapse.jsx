@@ -19,9 +19,9 @@ function Collapse() {
             onClick={() => handleCollapseToggle(item.id)}
           >
             {item.state ? (
-              <img src={haut} alt="flèche haut" />
-            ) : (
               <img src={bas} alt="flèche bas" />
+            ) : (
+              <img src={haut} alt="flèche haut" />
             )}
           </button>
           {item.state && <p>{item.text}</p>}
