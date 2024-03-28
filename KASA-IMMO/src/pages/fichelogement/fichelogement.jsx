@@ -33,7 +33,7 @@ function Fichelogement() {
   }, [id]);
 
   if (isInvalidPropertyId) {
-    return <Redirect to="/erreur404" />;
+    return <Redirect to="/error404" />;
   }
 
   return (
