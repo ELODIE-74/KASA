@@ -8,6 +8,7 @@ import DataLogement from "../../data/logements.json";
 //import composants
 import Slide from "../../components/slide/slide";
 //import Collapse from "../../components/collapse/collapse";
+
 import Rating from "../../components/rating/rating";
 
 //import de la page error en cas de problème d'id
@@ -51,13 +52,11 @@ function Fichelogement() {
               <li key={index}>{tag}</li>
             ))}
           </ul>
-
           {/* Description (mise en commentaire)
           <Collapse title="Description">
             <p>{logement.description}</p>
           </Collapse>
           */}
-
           {/*logement.equipements && (
             <Collapse title="Équipements">
               <ul>

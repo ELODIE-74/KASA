@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 10px;
+  width: 100%;
 }
 
 img {
@@ -13,11 +14,10 @@ img {
 
 .navigation ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   display: flex;
   align-items: center;
-  margin-left: 16px;
   flex-wrap: nowrap; /* Empêche les liens de passer à la ligne */
 }
 

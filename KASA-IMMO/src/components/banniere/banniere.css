@@ -35,6 +35,7 @@
   }
   .imagehome {
     height: 100px; /* Permet au logo de s'adapter à la taille du contenu */
+    margin-right: 5px;
   }
 
   .texteimagehome {
