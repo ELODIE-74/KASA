@@ -2,46 +2,28 @@ import React, { useState } from "react";
 //import css
 import "./collapse.css";
 //import du fichier créer de la base de données du collapse
-import collapseData from "./collapse.json";
 import haut from "../../assets/haut.png";
 import bas from "../../assets/bas.png";
 //méthode map pour la gestion des données(titre/texte défilement)par le statut ouvert/fermé
 
-function Collapse() {
-  const [data, setData] = useState(collapseData);
+function Collapse({ title, text }) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="container">
-      {data.map((item) => (
-        <div key={item.id}>
-          <h3 className="h3collapse">{item.title}</h3>
-          <button
-            className="buttonclick"
-            onClick={() => handleCollapseToggle(item.id)}
-          >
-            {item.state ? (
-              <img src={bas} alt="flèche bas" />
-            ) : (
-              <img src={haut} alt="flèche haut" />
-            )}
-          </button>
-          {item.state && <p>{item.text}</p>}
-        </div>
-      ))}
+      <h3 className="h3collapse">{title}</h3>
+      <button className="buttonclick" onClick={() => handleCollapseToggle()}>
+        {isOpen ? (
+          <img src={bas} alt="flèche bas" />
+        ) : (
+          <img src={haut} alt="flèche haut" />
+        )}
+      </button>
+      {isOpen && <p>{text}</p>}
     </div>
   );
   //action de l'utilisateur au clic sur le bouton de défilement par l'id du bouton
-  function handleCollapseToggle(id) {
-    setData((prevData) => {
-      return prevData.map((item) => {
-        if (item.id === id) {
-          return {
-            ...item,
-            state: !item.state,
-          };
-        }
-        return item;
-      });
-    });
+  function handleCollapseToggle() {
+    setIsOpen(!isOpen);
   }
 }
 
