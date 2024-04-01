@@ -42,20 +42,28 @@
   margin-right: 10px;
   margin-top: 15px;
 }
+.collapse-column {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
 .collapse-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
 }
-.collapse-contentdescription {
-  color: red;
-  font-size: 16px;
-  /* Ajoutez d'autres styles spécifiques ici */
-}
-.collapse-content {
+.collapse-equipments {
   color: blue;
-  font-size: 14px;
-  /* Ajoutez d'autres styles spécifiques ici */
+}
+
+@media (max-width: 768px) {
+  .collapse-container {
+    flex-direction: column;
+  }
+
+  .collapse-column {
+    margin-right: 0;
+    margin-bottom: 10px; /* Ajoutez une marge entre les colonnes en mode mobile si nécessaire */
+  }
 }
 .rating {
   display: flex;
@@ -89,12 +97,3 @@
     align-items: flex-start;
   }
 }
-/*.ficheslogement ul li {
-  display: flex;
-  margin-top: 20px;
-  background-color: orange;
-  color: white;
-  padding: 10px;
-  width: 100px;
-  text-align: center;
-}*/

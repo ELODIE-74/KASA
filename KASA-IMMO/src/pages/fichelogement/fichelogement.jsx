@@ -47,19 +47,22 @@ function Fichelogement() {
           </ul>
 
           <div className="collapse-container">
-            <Collapse
-              className="collapse-contentdescription"
-              title="Description"
-              text={logement.description}
-            />
-
-            {logement.equipments && (
+            <div className="collapse-column">
               <Collapse
-                className="collapse-content"
-                title="Équipements"
-                text={logement.equipments.join(", ")}
+                className="collapse-description"
+                title="Description"
+                text={logement.description}
               />
-            )}
+            </div>
+            <div className="collapse-column">
+              {logement.equipments && (
+                <Collapse
+                  className="collapse-equipments"
+                  title="Équipements"
+                  text={logement.equipments.join("")}
+                />
+              )}
+            </div>
           </div>
 
           {/* Note du logement */}
