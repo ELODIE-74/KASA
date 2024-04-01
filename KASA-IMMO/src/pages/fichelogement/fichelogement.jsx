@@ -46,19 +46,22 @@ function Fichelogement() {
             ))}
           </ul>
 
-          <Collapse className="custom-collapse " title="Description">
-            <p>{logement.description}</p>
-          </Collapse>
+          <div className="collapse-container">
+            <Collapse
+              className="collapse-contentdescription"
+              title="Description"
+              text={logement.description}
+            />
 
-          {logement.equipments && (
-            <Collapse title="Équipements">
-              <ul>
-                {logement.equipments.map((equipement, index) => (
-                  <li key={index}>{equipement}</li>
-                ))}
-              </ul>
-            </Collapse>
-          )}
+            {logement.equipments && (
+              <Collapse
+                className="collapse-content"
+                title="Équipements"
+                text={logement.equipments.join(", ")}
+              />
+            )}
+          </div>
+
           {/* Note du logement */}
           {logement.rating && (
             <div>
@@ -70,4 +73,5 @@ function Fichelogement() {
     </div>
   );
 }
+
 export default Fichelogement;

@@ -42,9 +42,20 @@
   margin-right: 10px;
   margin-top: 15px;
 }
-
-.custom-collapse {
-  width: 100%;
+.collapse-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.collapse-contentdescription {
+  color: red;
+  font-size: 16px;
+  /* Ajoutez d'autres styles spécifiques ici */
+}
+.collapse-content {
+  color: blue;
+  font-size: 14px;
+  /* Ajoutez d'autres styles spécifiques ici */
 }
 .rating {
   display: flex;
