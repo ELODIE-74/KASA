@@ -12,7 +12,8 @@ import Collapse from "../../components/collapse/collapse";
 import Rating from "../../components/rating/rating";
 
 //import de la page error en cas de problème d'id
-//import "../../pages/error404/error404";
+import "../../pages/error404/error404";
+import Error404 from "../../pages/error404/error404";
 
 //fonction pour gérer les évènements et éléments de la page logement
 function Fichelogement() {
@@ -28,6 +29,10 @@ function Fichelogement() {
       setLogement(null);
     }
   }, [id]);
+  if (!logement) {
+    // Si l'id n'existe pas, affiche la page d'erreur
+    return <Error404 />;
+  }
 
   return (
     <div className="ficheslogement">
