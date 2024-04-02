@@ -30,11 +30,12 @@ function Fichelogement() {
     }
   }, [id]);
   if (!logement) {
-    // Si l'id n'existe pas, affiche la page d'erreur
+    // Si l'id de la card n'exite pas, redirection sur la page d'erreur
     return <Error404 />;
   }
 
   return (
+    //affichage du slide, des ratings, du host (name+pictures(imgcercle), location et title de la page fichelogement suivant l'id de la card)
     <div className="ficheslogement">
       {logement && (
         <>
@@ -52,19 +53,19 @@ function Fichelogement() {
           </ul>
 
           <div className="collapse-container">
-            <div className="collapse-column">
+            <div className="collapse-coD">
               <Collapse
                 className="collapse-description"
                 title="Description"
                 text={logement.description}
               />
             </div>
-            <div className="collapse-column">
+            <div className="collapse-coE">
               {logement.equipments && (
                 <Collapse
                   className="collapse-equipments"
                   title="Équipements"
-                  text={logement.equipments.join("")}
+                  text={logement.equipments}
                 />
               )}
             </div>

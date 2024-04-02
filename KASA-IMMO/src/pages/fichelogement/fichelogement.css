@@ -42,29 +42,37 @@
   margin-right: 10px;
   margin-top: 15px;
 }
-.collapse-column {
-  flex: 1;
-  margin-right: 20px;
-  margin-top: 15px;
-}
-
 .collapse-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
-.collapse-equipments {
+.collapse-container .collapse-coD {
+  flex-basis: 50%;
+  color: #ff6060;
+}
+
+.collapse-container .collapse-coE {
+  flex-basis: 50%;
   color: blue;
+  margin-right: -50px;
 }
 
-@media (max-width: 768px) {
-  .collapse-container {
-    flex-direction: column;
-  }
-
-  .collapse-column {
-    margin-right: 0;
-    margin-bottom: 10px; /* Ajoutez une marge entre les colonnes en mode mobile si nécessaire */
-  }
+.collapse-description {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  font-size: medium;
 }
+
+.collapse-equipments {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  font-size: medium;
+}
+
 .rating {
   display: flex;
   flex-direction: row;
