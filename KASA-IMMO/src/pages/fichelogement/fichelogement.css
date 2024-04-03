@@ -24,7 +24,7 @@
 .ficheslogement p {
   font-size: 14px;
   font-weight: bold;
-  margin-left: -160px;
+  margin-left: -30px;
 }
 .ficheslogement ul {
   display: flex;
@@ -43,6 +43,31 @@
   margin-top: 15px;
 }
 .collapse-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.collapse-container .collapse-coD {
+  width: 40%;
+  background-color: #f2f2f2;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.collapse-container .collapse-coE {
+  width: 40%;
+  background-color: #f2f2f2;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+/*.collapse-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -71,7 +96,7 @@
   color: white;
   padding: 10px;
   font-size: medium;
-}
+}*/
 
 .rating {
   display: flex;
@@ -93,6 +118,8 @@
     top: 695px;
     bottom: 10px;
     right: 10px;
+    width: 30px;
+    height: 30px;
   }
 
   .ficheslogement p {
@@ -103,5 +130,21 @@
     position: static;
     margin-top: 10px;
     align-items: flex-start;
+    margin-top: -215px;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  /* Ajuster la largeur des étoiles */
+  .rating .star {
+    width: 16px;
+    height: 16px;
+  }
+
+  .collapse-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: -190px;
+    margin-bottom: 20px;
   }
 }

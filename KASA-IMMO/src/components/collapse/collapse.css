@@ -18,6 +18,8 @@
 .h3collapse {
   margin: 0;
   padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 2px;
   font-size: 25px;
   height: 50px;
   color: white;
@@ -30,16 +32,20 @@ p {
   font-size: 25px;
   margin-top: 25px;
 }
-
+.container,
+footer {
+  margin-bottom: -50px;
+}
 /*media queries mobile*/
 @media only screen and (max-width: 482px) {
   .container {
-    margin-left: 0;
+    margin-left: -45px;
+
     width: 100%;
   }
 
   .buttonclick {
-    right: 25px;
+    right: -5px;
   }
 
   p {

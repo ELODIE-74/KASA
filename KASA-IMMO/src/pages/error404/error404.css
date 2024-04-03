@@ -20,7 +20,8 @@
   font-size: 18px;
   margin: 0;
   color: #ff6060;
-  margin-right: 70px;
+  margin-right: -25px;
+  margin-left: 15px;
 }
 
 .LinkError404 {
@@ -38,8 +39,8 @@
     font-size: 80px;
   }
   .TexteError404 {
-    font-size: 18px;
-    margin-right: 80px;
+    font-size: 12px;
+    margin-right: 5px;
   }
   .LinkError404 {
     font-size: 14px;
