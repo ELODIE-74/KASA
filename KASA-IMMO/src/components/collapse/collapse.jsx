@@ -28,7 +28,7 @@ function Collapse({ title, text }) {
             ))}
           </ul>
         ) : (
-          <p>{text}</p>
+          <p className="backgroundText">{text}</p>
         ))}
     </div>
   );

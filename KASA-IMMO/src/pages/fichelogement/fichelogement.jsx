@@ -42,7 +42,7 @@ function Fichelogement() {
           <Slide pictures={logement.pictures} />
           <h2>{logement.title}</h2>
           <div>
-            <h3>{logement.host.name}</h3>
+            <h3 id="colortitleh3">{logement.host.name}</h3>
             <img className="imgcercle" src={logement.host.picture} />
           </div>
           <p>{logement.location}</p>

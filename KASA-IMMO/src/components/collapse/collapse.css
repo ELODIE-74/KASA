@@ -32,6 +32,9 @@ p {
   font-size: 25px;
   margin-top: 25px;
 }
+.backgroundText {
+  background-color: #f2f2f2;
+}
 .container,
 footer {
   margin-bottom: -50px;

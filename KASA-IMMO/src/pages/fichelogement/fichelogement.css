@@ -7,11 +7,13 @@
 .ficheslogement h3 {
   font-weight: bold;
   font-size: 18px;
+  color: white;
+}
+#colortitleh3 {
   color: #ff6060;
-  margin-top: -15px;
-  position: absolute;
-  top: auto;
-  right: 150px;
+}
+.colortitleh3 {
+  color: #ff6060;
 }
 .imgcercle {
   width: 50px;

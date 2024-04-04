@@ -5,7 +5,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 620px;
+  /*margin-top: 620px;*/
+  margin-top: 20px;
 }
 .logofooter {
   color: white;
