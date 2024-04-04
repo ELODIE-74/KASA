@@ -8,6 +8,7 @@ import bas from "../../assets/bas.png";
 
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
+  const isArray = text instanceof Array;
   return (
     <div className="container">
       <h3 className="h3collapse">{title}</h3>
@@ -18,7 +19,17 @@ function Collapse({ title, text }) {
           <img src={haut} alt="flèche haut" />
         )}
       </button>
-      {isOpen && <p>{text}</p>}
+
+      {isOpen &&
+        (isArray ? (
+          <ul>
+            {text.map((equipement) => (
+              <li>{equipement}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{text}</p>
+        ))}
     </div>
   );
   //action de l'utilisateur au clic sur le bouton de défilement par l'id du bouton
