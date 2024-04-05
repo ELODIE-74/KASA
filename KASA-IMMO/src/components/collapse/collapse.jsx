@@ -24,7 +24,7 @@ function Collapse({ title, text }) {
         (isArray ? (
           <ul>
             {text.map((equipement) => (
-              <li>{equipement}</li>
+              <li key={equipement}>{equipement}</li>
             ))}
           </ul>
         ) : (

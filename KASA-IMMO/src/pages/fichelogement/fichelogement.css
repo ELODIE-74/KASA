@@ -12,6 +12,7 @@
 #colortitleh3 {
   color: #ff6060;
 }
+
 .colortitleh3 {
   color: #ff6060;
 }
@@ -36,7 +37,7 @@
   margin-top: 15px;
 }
 
-.ficheslogement li {
+.ficheslogement #tag {
   background-color: #ff6060;
   color: white;
   border-radius: 20px;

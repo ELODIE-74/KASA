@@ -48,7 +48,9 @@ function Fichelogement() {
           <p>{logement.location}</p>
           <ul>
             {logement.tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
+              <li id="tag" key={index}>
+                {tag}
+              </li>
             ))}
           </ul>
 
