@@ -53,54 +53,24 @@
 }
 
 .collapse-container .collapse-coD {
-  width: 40%;
-  background-color: #f2f2f2;
+  width: 50%;
   color: black;
   padding: 10px;
-  font-size: 25px;
   margin-top: 20px;
 }
 
 .collapse-container .collapse-coE {
-  width: 40%;
-  background-color: #f2f2f2;
+  width: 50%;
   color: black;
-  padding: 10px;
-  font-size: 25px;
   margin-top: 20px;
 }
-
-/*.collapse-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+#collapse-coD {
+  height: 250px;
 }
-.collapse-container .collapse-coD {
-  flex-basis: 50%;
-  color: #ff6060;
+#collapse-coE {
+  padding: 5px;
+  font-size: 20px;
 }
-
-.collapse-container .collapse-coE {
-  flex-basis: 50%;
-  color: blue;
-  margin-right: -50px;
-}
-
-.collapse-description {
-  background-color: gray;
-  color: white;
-  padding: 10px;
-  font-size: medium;
-}
-
-.collapse-equipments {
-  background-color: gray;
-  color: white;
-  padding: 10px;
-  font-size: medium;
-}*/
-
 .rating {
   display: flex;
   flex-direction: row;

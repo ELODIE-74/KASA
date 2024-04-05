@@ -12,7 +12,10 @@
   border: none;
   width: 50px;
   margin-top: 75px;
-  margin-right: 120px;
+  margin-right: 80px;
+}
+.buttonclick img {
+  width: 40px;
 }
 
 .h3collapse {
@@ -35,6 +38,7 @@ p {
 .backgroundText {
   background-color: #f2f2f2;
 }
+
 .container,
 footer {
   margin-bottom: -50px;
