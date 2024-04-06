@@ -1,4 +1,101 @@
-.ficheslogement h2 {
+/* Styles pour la version desktop */
+
+#colortitle {
+  font-weight: bold;
+  font-size: 25px;
+  color: #ff6060;
+}
+
+#colortitlehost {
+  color: #ff6060;
+}
+#location {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.imgcercle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.host-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tags-ratings-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tag {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.collapse-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .ficheslogement {
+    flex-direction: column;
+  }
+  .title-container {
+    align-items: center;
+    text-align: center;
+  }
+  .title-info {
+    text-align: center;
+  }
+
+  .host-info {
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+/*.collapse-coD {
+  /* Ajoutez ici les styles pour le collapse de la description 
+}
+
+.collapse-coE {
+  /* Ajoutez ici les styles pour le collapse des équipements 
+}*/
+
+/*.ficheslogement h2 {
   font-weight: bold;
   font-size: 30px;
   color: #ff6060;
@@ -106,9 +203,9 @@
     margin-top: -215px;
     margin-left: 5px;
     font-size: 14px;
-  }
-  /* Ajuster la largeur des étoiles */
-  .rating .star {
+  }*/
+/* Ajuster la largeur des étoiles */
+/*.rating .star {
     width: 16px;
     height: 16px;
   }
@@ -120,4 +217,4 @@
     margin-left: -190px;
     margin-bottom: 20px;
   }
-}
+}*/

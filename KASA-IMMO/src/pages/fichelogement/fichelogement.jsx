@@ -17,9 +17,8 @@ import Error404 from "../../pages/error404/error404";
 
 //fonction pour gérer les évènements et éléments de la page logement
 function Fichelogement() {
-  // Récupérer l'ID du logement à partir de l'URL
   const [logement, setLogement] = useState(null);
-  const { id } = useParams(); // Récupère l'id du logement dans l'url
+  const { id } = useParams();
 
   useEffect(() => {
     const data = DataLogement.find((logement) => logement.id === id);
@@ -29,30 +28,41 @@ function Fichelogement() {
       setLogement(null);
     }
   }, [id]);
+
   if (!logement) {
-    // Si l'id de la card n'exite pas, redirection sur la page d'erreur
     return <Error404 />;
   }
 
   return (
-    //affichage du slide, des ratings, du host (name+pictures(imgcercle), location et title de la page fichelogement suivant l'id de la card)
     <div className="ficheslogement">
       {logement && (
         <>
           <Slide pictures={logement.pictures} />
-          <h2>{logement.title}</h2>
-          <div>
-            <h3 id="colortitleh3">{logement.host.name}</h3>
-            <img className="imgcercle" src={logement.host.picture} />
+          <div className="title-container">
+            <div className="title-info">
+              <h2 id="colortitle">{logement.title}</h2>
+              <p id="location">{logement.location}</p>
+            </div>
+            <div className="host-info">
+              <h3 id="colortitlehost">{logement.host.name}</h3>
+              <img className="imgcercle" src={logement.host.picture} />
+            </div>
           </div>
-          <p>{logement.location}</p>
-          <ul>
-            {logement.tags.map((tag, index) => (
-              <li id="tag" key={index}>
-                {tag}
-              </li>
-            ))}
-          </ul>
+
+          <div className="tags-ratings-container">
+            <ul className="tags">
+              {logement.tags.map((tag, index) => (
+                <li id="tag" key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
+            {logement.rating && (
+              <div className="rating">
+                <Rating rating={logement.rating} />
+              </div>
+            )}
+          </div>
 
           <div className="collapse-container">
             <div className="collapse-coD" id="collapse-coD">
@@ -64,13 +74,6 @@ function Fichelogement() {
               )}
             </div>
           </div>
-
-          {/* Note du logement */}
-          {logement.rating && (
-            <div>
-              <Rating rating={logement.rating} />
-            </div>
-          )}
         </>
       )}
     </div>

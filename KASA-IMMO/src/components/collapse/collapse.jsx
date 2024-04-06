@@ -13,18 +13,19 @@ function Collapse({ title, text }) {
     <div className="container">
       <h3 className="h3collapse">{title}</h3>
       <button className="buttonclick" onClick={() => handleCollapseToggle()}>
+        {/**la flèche au clic permet de dire si c'est ouvert on affiche les données sinon si c'est fermé, on les cachent */}
         {isOpen ? (
           <img src={bas} alt="flèche bas" />
         ) : (
           <img src={haut} alt="flèche haut" />
         )}
       </button>
-
+      {/**si le texte est un tableau, retourne les données sous forme d'une liste sinon affiche le texte normale */}
       {isOpen &&
         (isArray ? (
           <ul>
             {text.map((equipement) => (
-              <li className="backgroundText" key={equipement}>
+              <li className="backgroundTextE" key={equipement}>
                 {equipement}
               </li>
             ))}

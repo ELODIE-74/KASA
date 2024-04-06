@@ -9,11 +9,17 @@ import DataLogement from "../../data/logements.json";
 function Home() {
   return (
     <section>
+      {/**affichage de la bannière */}
       <div className="imagebanniere">
         <img className="imagehome" src={imageHome} alt="image bannière" />
         <p className="texteimagehome">Chez vous, partout et ailleurs</p>
       </div>
       <div className="ConteneurLogement">
+        {/**boucle map qui itère sur les éléments du tableau Datalogement (fichier logements.Json),affiche une carte de logement pour chaque élément
+         * récupére l'id = identifiant
+         * récupère le cover = image du logement dans la card
+         * récupère le titre = de quel logement il s'agit
+         */}
         {DataLogement.map((logement) => (
           <div key={logement.id}>
             <Card

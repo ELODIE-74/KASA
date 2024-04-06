@@ -54,7 +54,7 @@ function Slide({ pictures }) {
           onClick={handleNextSlide}
         />
       )}
-
+      {/**chaque dot représente une image dans le carrousel, l'index de chaque image est utilisé pour déterminer si le dot est actif ou non */}
       {pictures.length > 1 && (
         <div className="pagination">
           {pictures.map((picture, index) => (
