@@ -1,5 +1,7 @@
 /* Styles pour la version desktop */
-
+.ficheslogement {
+  padding: 30px;
+}
 #colortitle {
   font-weight: bold;
   font-size: 25px;
@@ -67,8 +69,19 @@
 }
 .collapse-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.collapse-coD,
+.collapse-coE {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  margin-top: 20px;
 }
 @media (max-width: 768px) {
   .ficheslogement {
