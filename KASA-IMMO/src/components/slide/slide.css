@@ -53,3 +53,18 @@
 .dot.active {
   background-color: #ff6060;
 }
+/* Styles pour la version mobile */
+@media (max-width: 768px) {
+  .slideshow {
+    height: 300px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pagination {
+    bottom: 5px;
+  }
+}

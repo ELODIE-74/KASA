@@ -82,11 +82,17 @@ function Fichelogement() {
            */}
           <div className="collapse-container">
             <div className="collapse-coD" id="collapse-coD">
-              <Collapse title="Description" text={logement.description} />
+              <Collapse
+                title={<span className="collapse-title">Description</span>}
+                text={logement.description}
+              />
             </div>
             <div className="collapse-coE" id="collapse-coE">
               {logement.equipments && (
-                <Collapse title="Équipements" text={logement.equipments} />
+                <Collapse
+                  title={<span className="collapse-title">Équipements</span>}
+                  text={logement.equipments}
+                />
               )}
             </div>
           </div>

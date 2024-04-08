@@ -6,8 +6,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /*margin-top: 620px;*/
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 /*logo kasa du footer*/
 .logofooter {
