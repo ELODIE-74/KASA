@@ -1,58 +1,61 @@
 /* Styles pour la version desktop */
+/*conteneur qui contient les éléments de la page fichelogement*/
 .ficheslogement {
   padding: 30px;
 }
+/*couleur du titre du logement*/
 #colortitle {
   font-weight: bold;
   font-size: 25px;
   color: #ff6060;
 }
-
+/*couleur du titre(nom) de l'hôte*/
 #colortitlehost {
   color: #ff6060;
 }
+/*mise en forme de la localisation*/
 #location {
   font-weight: bold;
   font-size: 18px;
   text-align: left;
 }
-
+/*image de l'hôte dans le cercle (mise en forme du contenant)*/
 .imgcercle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-left: 10px;
 }
-
+/*contient le titre et la localisation*/
 .title-container {
   display: flex;
   align-items: center;
 }
-
+/*ce qui contient le nom + image dans le cercle*/
 .host-info {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-
+/*positionnement location*/
 .location {
   display: flex;
   justify-content: flex-start;
 }
-
+/*conteneur des mots-clés(tags) + les étoiles(ratings)*/
 .tags-ratings-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+/*positionnement des mots-clés*/
 .tags {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+/*mise en forme des mots-clés*/
 #tag {
   background-color: #ff6060;
   color: white;
@@ -61,28 +64,30 @@
   margin-right: 10px;
   margin-top: 15px;
 }
-
+/*positionnement des étoiles*/
 .rating {
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
+/*conteneur qui contient les deux collapse*/
 .collapse-container {
   display: flex;
   padding: 0px;
 }
-
+/*positionnement final des collapse dans la page*/
 .collapse-coD,
 .collapse-coE {
   flex: 1;
 }
-
+/*style appliqué dans les collapse de cette page*/
 ul {
   list-style: none;
   padding: 5px;
   margin: 0;
   margin-top: 20px;
 }
+/*media queries mobile*/
 @media (max-width: 768px) {
   .ficheslogement {
     flex-direction: column;

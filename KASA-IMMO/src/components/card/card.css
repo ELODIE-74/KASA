@@ -15,7 +15,7 @@
     margin-left: -38px;
   }
 }
-
+/*conteneur de la card*/
 .ConteneurCard {
   cursor: pointer;
   width: 400px;
@@ -42,7 +42,7 @@
     height: 250px;
   }
 }
-
+/*conteneur du titre logement*/
 .ConteneurtitleLogement {
   width: 100%;
   height: 100%;
@@ -52,7 +52,7 @@
     bottom: 250px;
   }
 }
-
+/*titre de la card*/
 .TitleLogement {
   position: relative;
   left: 20px;

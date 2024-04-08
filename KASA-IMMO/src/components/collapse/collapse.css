@@ -1,9 +1,10 @@
+/*conteneur collapse*/
 .container {
   margin-bottom: 20px;
   position: relative;
   padding: 50px;
 }
-
+/*action du clic sur la flèche*/
 .buttonclick {
   position: absolute;
   top: 0;
@@ -14,10 +15,11 @@
   margin-top: 75px;
   margin-right: 80px;
 }
+/*taille image de la flèche*/
 .buttonclick img {
   width: 40px;
 }
-
+/*titre de chaque collapse*/
 .h3collapse {
   margin: 0;
   padding: 10px;
@@ -28,13 +30,14 @@
   color: white;
   background-color: #ff6060;
 }
-
+/*mise en forme du texte dans le collapse*/
 p {
   margin: 0;
   padding: 0 30px;
   font-size: 25px;
   margin-top: 25px;
 }
+/*arrière-plan gris clair du texte*/
 .backgroundText {
   background-color: #f2f2f2;
 }

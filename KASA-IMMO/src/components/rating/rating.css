@@ -1,8 +1,9 @@
+/*conteneur des étoiles(note)*/
 .rating {
   display: flex;
   align-items: center;
 }
-
+/*mise en forme étoile*/
 .star {
   width: 30px;
   height: 30px;

@@ -1,3 +1,4 @@
+/*conteneur du header*/
 .header {
   display: flex;
   align-items: center;
@@ -5,13 +6,13 @@
   margin: 10px;
   width: 100%;
 }
-
+/*logo du header*/
 img {
   color: #ff6060;
   width: 95px;
   height: 25px;
 }
-
+/*conteneur des liens de navigations*/
 .navigation ul {
   list-style-type: none;
   margin: auto;
@@ -20,7 +21,7 @@ img {
   align-items: center;
   flex-wrap: nowrap; /* Empêche les liens de passer à la ligne */
 }
-
+/*liens de navigation*/
 .navigation li {
   margin-left: 16px;
   padding: 15px;
@@ -38,6 +39,7 @@ img {
   text-decoration: underline;
   margin-top: 5px;
 }
+/*media queries mobile*/
 @media only screen and (max-width: 482px) {
   .logo {
     width: 25px;
