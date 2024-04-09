@@ -80,9 +80,16 @@
   grid-gap: 20px;
   padding: 0px;
 }
+.collapse-coD {
+  margin-left: -45px;
+}
+.collapse-coE {
+  margin-right: -45px;
+}
 #collapse-coD,
 #collapse-coE {
   padding-left: 0px;
+  font-size: 18px;
 }
 /*style appliqué dans les collapse de cette page*/
 ul {
@@ -153,5 +160,11 @@ ul {
   .collapse-title {
     font-size: 15px;
     font-weight: bold;
+  }
+  .collapse-coD {
+    margin-left: 0px;
+  }
+  .collapse-coE {
+    margin-right: 0px;
   }
 }
