@@ -4,14 +4,12 @@
   justify-content: space-evenly;
   background-color: #f6f6f6;
   border-radius: 30px;
-  /*margin-bottom: -580px;*/
-  /*margin-top: -30px;*/
+
   @media (max-width: 1005px) {
     align-items: center;
     background-color: white;
     padding: 30px 0;
     margin: 0 0;
-    /* margin-bottom: -620px;*/
     margin-left: -38px;
   }
 }

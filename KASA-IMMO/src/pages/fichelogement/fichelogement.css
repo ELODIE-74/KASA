@@ -91,12 +91,18 @@
   padding-left: 0px;
   font-size: 18px;
 }
+#collapse-coE {
+  margin-top: 0px;
+}
 /*style appliqué dans les collapse de cette page*/
 ul {
   list-style: none;
   padding: 5px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
 }
 /* Styles pour la version mobile */
 @media (max-width: 768px) {

@@ -35,7 +35,8 @@ p {
   margin: 0;
   padding: 0 30px;
   font-size: 25px;
-  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /*arrière-plan gris clair du texte*/
 .backgroundText {

@@ -2,13 +2,14 @@
 import { Link } from "react-router-dom";
 import "./card.css";
 
-// ASSETS
-import DataLogement from "../../data/logements.json";
-
 // Composant Card qui génére des cards
 function Card({ id, cover, title }) {
   return (
-    <Link to={`/fichelogement/${id}`} key={id}>
+    <Link
+      to={`/fichelogement/${id}`}
+      key={id}
+      style={{ textDecoration: "none" }}
+    >
       <figure className="ConteneurCard">
         <img className="ImgLogement" src={cover} alt={title} />
         <div className="ConteneurtitleLogement"></div>
