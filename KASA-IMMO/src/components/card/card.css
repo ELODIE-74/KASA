@@ -21,8 +21,9 @@
   margin: 30px;
   transition: 0.4s;
   @media (max-width: 1005px) {
-    width: 85vw;
+    width: 100%;
     height: 250px;
+    margin-right: 0px;
   }
 }
 
